@@ -1,5 +1,4 @@
 
-
 file <- "data.zip"
 url <- "http://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 data_path <- "UCI HAR Dataset"
@@ -143,3 +142,7 @@ colnames(dataset2)[-c(1:2)] <- paste(colnames(dataset2)[-c(1:2)], "_mean", sep="
 
 # Save tidy dataset2 into results folder
 saveResult(dataset2,"dataset2")
+
+
+# Print the tidy dataset2
+print (dataset2)
